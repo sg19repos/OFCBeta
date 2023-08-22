@@ -54,7 +54,7 @@ module.exports = {
       } else {
         const result = compareSync(
           body.user_password.toString(),
-          results[0].user_password
+          results?.[0]?.user_password
         );
         // const result = body.user_password === results.user_password;
 
